@@ -1,5 +1,6 @@
 package me.build;
 
+import me.build.build.build;
 import me.build.build.buildevent;
 
 import org.bukkit.Bukkit;
@@ -12,7 +13,8 @@ public class main extends JavaPlugin {
 		PluginManager pm = Bukkit.getPluginManager();
 		
 		pm.registerEvents(new buildevent(), this);
-		
+		pm.registerEvents(new build(), this);
+		getCommand("construir").setExecutor(new build());
 		
 		
 	}

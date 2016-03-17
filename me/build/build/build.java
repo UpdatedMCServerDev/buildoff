@@ -36,6 +36,14 @@ public class build implements CommandExecutor, Listener {
 					Build.remove(p);
 					p.sendMessage("§cModo Construir Desativado.");
 				}
+				if(args[0].equals("OFF")) {
+					Build.remove(p);
+					p.sendMessage("§cModo Construir Desativado.");
+				}
+				if(args[0].equals("ON")) {
+					Build.add(p);
+					p.sendMessage("§aModo Construir Ativado");
+				}
 				
 				
 			}
